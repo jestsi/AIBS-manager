@@ -53,9 +53,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../AutoInstallerBlackSoft/main.cpp \
-		../AutoInstallerBlackSoft/mainwindow.cpp moc_mainwindow.cpp
+		../AutoInstallerBlackSoft/mainwindow.cpp qrc_resurce.cpp \
+		moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
+		qrc_resurce.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
@@ -264,6 +266,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		../AutoInstallerBlackSoft/.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -504,6 +507,7 @@ Makefile: ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro /usr/lib/qt/mkspe
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -524,7 +528,8 @@ Makefile: ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro /usr/lib/qt/mkspe
 		/usr/lib/qt/mkspecs/features/exceptions.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
-		../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro
+		../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro \
+		../AutoInstallerBlackSoft/resurce.qrc
 	$(QMAKE) -o Makefile ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 /usr/lib/qt/mkspecs/features/spec_pre.prf:
 /usr/lib/qt/mkspecs/common/unix.conf:
@@ -733,6 +738,7 @@ Makefile: ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro /usr/lib/qt/mkspe
 /usr/lib/qt/mkspecs/features/qt_config.prf:
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 /usr/lib/qt/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/qt/mkspecs/features/exclusive_builds.prf:
 /usr/lib/qt/mkspecs/features/toolchain.prf:
 /usr/lib/qt/mkspecs/features/default_pre.prf:
@@ -754,6 +760,7 @@ Makefile: ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro /usr/lib/qt/mkspe
 /usr/lib/qt/mkspecs/features/yacc.prf:
 /usr/lib/qt/mkspecs/features/lex.prf:
 ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro:
+../AutoInstallerBlackSoft/resurce.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../AutoInstallerBlackSoft/AutoInstallerBlackSoft.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 
@@ -768,6 +775,7 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
+	$(COPY_FILE) --parents ../AutoInstallerBlackSoft/resurce.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../AutoInstallerBlackSoft/mainwindow.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../AutoInstallerBlackSoft/main.cpp ../AutoInstallerBlackSoft/mainwindow.cpp $(DISTDIR)/
@@ -795,8 +803,14 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_resurce.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) qrc_resurce.cpp
+qrc_resurce.cpp: ../AutoInstallerBlackSoft/resurce.qrc \
+		/usr/bin/rcc \
+		../AutoInstallerBlackSoft/images/shell.png
+	/usr/bin/rcc -name resurce ../AutoInstallerBlackSoft/resurce.qrc -o qrc_resurce.cpp
+
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
@@ -828,7 +842,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
@@ -838,6 +852,9 @@ main.o: ../AutoInstallerBlackSoft/main.cpp ../AutoInstallerBlackSoft/mainwindow.
 mainwindow.o: ../AutoInstallerBlackSoft/mainwindow.cpp ../AutoInstallerBlackSoft/mainwindow.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../AutoInstallerBlackSoft/mainwindow.cpp
+
+qrc_resurce.o: qrc_resurce.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_resurce.o qrc_resurce.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

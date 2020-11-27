@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>AIBS</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resurce.qrc">
+    <normaloff>:/image/images/shell.png</normaloff>:/image/images/shell.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: #555;</string>
   </property>
@@ -1017,6 +1021,8 @@ border-bottom-left-radius: 15px;</string>
    <zorder>downloadButton_19</zorder>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resurce.qrc"/>
+ </resources>
  <connections/>
 </ui>

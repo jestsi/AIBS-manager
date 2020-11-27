@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -66,6 +67,9 @@ public:
         MainWindow->resize(715, 385);
         MainWindow->setMinimumSize(QSize(715, 385));
         MainWindow->setMaximumSize(QSize(715, 385));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/image/images/shell.png"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: #555;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
