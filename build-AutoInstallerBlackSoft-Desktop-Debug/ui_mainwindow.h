@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.1
+** Created by: Qt User Interface Compiler version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,6 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -23,14 +25,6 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QPushButton *downloadButton;
-    QPushButton *downloadButton_2;
-    QPushButton *pushButton;
-    QPushButton *downloadButton_3;
-    QPushButton *pushButton_2;
-    QPushButton *downloadButton_4;
-    QPushButton *pushButton_3;
-    QPushButton *downloadButton_5;
-    QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QPushButton *downloadButton_6;
     QPushButton *downloadButton_7;
@@ -39,16 +33,6 @@ public:
     QPushButton *downloadButton_8;
     QPushButton *downloadButton_9;
     QPushButton *pushButton_8;
-    QPushButton *downloadButton_10;
-    QPushButton *pushButton_9;
-    QPushButton *downloadButton_11;
-    QPushButton *pushButton_10;
-    QPushButton *pushButton_11;
-    QPushButton *downloadButton_12;
-    QPushButton *downloadButton_13;
-    QPushButton *pushButton_12;
-    QPushButton *pushButton_13;
-    QPushButton *downloadButton_14;
     QPushButton *downloadButton_15;
     QPushButton *pushButton_14;
     QPushButton *downloadButton_16;
@@ -59,100 +43,64 @@ public:
     QPushButton *downloadButton_18;
     QPushButton *pushButton_18;
     QPushButton *downloadButton_19;
+    QFrame *line_2;
+    QFrame *line_3;
+    QLabel *label;
+    QLabel *label_2;
+    QPushButton *downloadButton_13;
+    QPushButton *pushButton_12;
+    QPushButton *pushButton_2;
+    QPushButton *downloadButton_14;
+    QPushButton *downloadButton_10;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton;
+    QPushButton *pushButton_9;
+    QPushButton *downloadButton_2;
+    QPushButton *pushButton_13;
+    QPushButton *downloadButton_3;
+    QPushButton *pushButton_3;
+    QPushButton *downloadButton_12;
+    QPushButton *downloadButton_4;
+    QPushButton *pushButton_10;
+    QPushButton *downloadButton_5;
+    QPushButton *downloadButton_11;
+    QPushButton *pushButton_11;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->setWindowModality(Qt::ApplicationModal);
         MainWindow->resize(715, 385);
         MainWindow->setMinimumSize(QSize(715, 385));
         MainWindow->setMaximumSize(QSize(715, 385));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/image/images/shell.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
+        MainWindow->setWindowOpacity(0.900000000000000);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: #555;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         downloadButton = new QPushButton(centralwidget);
         downloadButton->setObjectName(QString::fromUtf8("downloadButton"));
-        downloadButton->setGeometry(QRect(320, 0, 71, 31));
+        downloadButton->setGeometry(QRect(320, 20, 71, 31));
         QFont font;
         font.setFamily(QString::fromUtf8("Noto Sans Bengali UI"));
         font.setBold(true);
         font.setWeight(75);
         downloadButton->setFont(font);
         downloadButton->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #999;\n"
-"border-radius: 20px;\n"
-"border-top-right-radius: 1px;\n"
-"border-top-left-radius: 1px;"));
-        downloadButton_2 = new QPushButton(centralwidget);
-        downloadButton_2->setObjectName(QString::fromUtf8("downloadButton_2"));
-        downloadButton_2->setGeometry(QRect(0, 210, 111, 31));
-        downloadButton_2->setFont(font);
-        downloadButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_2->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-bottom-right-radius: 15px;"));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(0, 180, 111, 31));
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;"));
-        downloadButton_3 = new QPushButton(centralwidget);
-        downloadButton_3->setObjectName(QString::fromUtf8("downloadButton_3"));
-        downloadButton_3->setGeometry(QRect(0, 350, 111, 41));
-        downloadButton_3->setFont(font);
-        downloadButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_3->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-radius: 1px;"));
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(0, 320, 111, 31));
-        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;"));
-        downloadButton_4 = new QPushButton(centralwidget);
-        downloadButton_4->setObjectName(QString::fromUtf8("downloadButton_4"));
-        downloadButton_4->setGeometry(QRect(0, 280, 111, 31));
-        downloadButton_4->setFont(font);
-        downloadButton_4->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_4->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-" border-bottom-right-radius: 15px;\n"
-"opacity: 0.1;"));
-        pushButton_3 = new QPushButton(centralwidget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(0, 250, 111, 31));
-        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-" border-top-right-radius: 15px;"));
-        downloadButton_5 = new QPushButton(centralwidget);
-        downloadButton_5->setObjectName(QString::fromUtf8("downloadButton_5"));
-        downloadButton_5->setGeometry(QRect(0, 140, 111, 31));
-        downloadButton_5->setFont(font);
-        downloadButton_5->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_5->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-bottom-right-radius: 15px;"));
-        pushButton_4 = new QPushButton(centralwidget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(0, 110, 111, 31));
-        pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;"));
+        downloadButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	color: rgb(16, 255, 24);\n"
+"	background-color: #000;\n"
+"	border-color: #111;\n"
+"	border-radius: 20px;\n"
+"	border-bottom-right-radius: 1px;\n"
+"	border-bottom-left-radius: 1px; \n"
+"} QPushButton:hover{\n"
+"	color: rgb(16, 255, 24);\n"
+"	background-color: #333;\n"
+"}"));
         pushButton_5 = new QPushButton(centralwidget);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setGeometry(QRect(600, 250, 121, 31));
@@ -218,93 +166,6 @@ public:
         pushButton_8->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
 "background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
 "border-top-left-radius: 15px;"));
-        downloadButton_10 = new QPushButton(centralwidget);
-        downloadButton_10->setObjectName(QString::fromUtf8("downloadButton_10"));
-        downloadButton_10->setGeometry(QRect(130, 110, 101, 41));
-        downloadButton_10->setFont(font);
-        downloadButton_10->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_10->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-radius: 1px;\n"
-"border-bottom-right-radius: 15px;"));
-        pushButton_9 = new QPushButton(centralwidget);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        pushButton_9->setGeometry(QRect(120, 80, 111, 31));
-        pushButton_9->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_9->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;\n"
-"border-bottom-left-radius: 12px;"));
-        downloadButton_11 = new QPushButton(centralwidget);
-        downloadButton_11->setObjectName(QString::fromUtf8("downloadButton_11"));
-        downloadButton_11->setGeometry(QRect(130, 190, 101, 41));
-        downloadButton_11->setFont(font);
-        downloadButton_11->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_11->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-radius: 1px;\n"
-"border-bottom-right-radius: 15px;"));
-        pushButton_10 = new QPushButton(centralwidget);
-        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        pushButton_10->setGeometry(QRect(120, 160, 111, 31));
-        pushButton_10->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_10->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;\n"
-"border-bottom-left-radius: 12px;"));
-        pushButton_11 = new QPushButton(centralwidget);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setGeometry(QRect(120, 240, 111, 31));
-        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_11->setStyleSheet(QString::fromUtf8("color: rgb(0, 150, 0);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;\n"
-"border-bottom-left-radius: 12px;"));
-        downloadButton_12 = new QPushButton(centralwidget);
-        downloadButton_12->setObjectName(QString::fromUtf8("downloadButton_12"));
-        downloadButton_12->setGeometry(QRect(130, 270, 101, 41));
-        downloadButton_12->setFont(font);
-        downloadButton_12->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_12->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-radius: 1px;\n"
-"border-bottom-right-radius: 15px;"));
-        downloadButton_13 = new QPushButton(centralwidget);
-        downloadButton_13->setObjectName(QString::fromUtf8("downloadButton_13"));
-        downloadButton_13->setGeometry(QRect(120, 350, 111, 41));
-        downloadButton_13->setFont(font);
-        downloadButton_13->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_13->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-radius: 1px;"));
-        pushButton_12 = new QPushButton(centralwidget);
-        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(120, 320, 111, 31));
-        pushButton_12->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_12->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-left-radius: 15px;\n"
-"border-top-right-radius: 15px;"));
-        pushButton_13 = new QPushButton(centralwidget);
-        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
-        pushButton_13->setGeometry(QRect(0, 40, 111, 31));
-        pushButton_13->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_13->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
-"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
-"border-top-right-radius: 15px;"));
-        downloadButton_14 = new QPushButton(centralwidget);
-        downloadButton_14->setObjectName(QString::fromUtf8("downloadButton_14"));
-        downloadButton_14->setGeometry(QRect(0, 70, 111, 31));
-        downloadButton_14->setFont(font);
-        downloadButton_14->setCursor(QCursor(Qt::PointingHandCursor));
-        downloadButton_14->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
-"background-color: #444;\n"
-"border-color: #444;\n"
-"border-bottom-right-radius: 15px;"));
         downloadButton_15 = new QPushButton(centralwidget);
         downloadButton_15->setObjectName(QString::fromUtf8("downloadButton_15"));
         downloadButton_15->setGeometry(QRect(600, 70, 121, 31));
@@ -394,16 +255,184 @@ public:
 "border-color: #444;\n"
 "border-radius: 1px;\n"
 "border-bottom-left-radius: 15px;"));
+        line_2 = new QFrame(centralwidget);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setGeometry(QRect(0, 25, 241, 16));
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+        line_3 = new QFrame(centralwidget);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setGeometry(QRect(460, 25, 261, 16));
+        line_3->setFrameShape(QFrame::HLine);
+        line_3->setFrameShadow(QFrame::Sunken);
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(0, 7, 241, 21));
+        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 76, 231);"));
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(260, 50, 191, 331));
+        label_2->setStyleSheet(QString::fromUtf8("filter: alpha(Opacity=50);\n"
+"    opacity: 0.5; "));
+        label_2->setTextFormat(Qt::PlainText);
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/image/images/1125380_original.jpg")));
+        label_2->setScaledContents(true);
+        label_2->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
+        label_2->setWordWrap(true);
+        downloadButton_13 = new QPushButton(centralwidget);
+        downloadButton_13->setObjectName(QString::fromUtf8("downloadButton_13"));
+        downloadButton_13->setGeometry(QRect(120, 350, 111, 41));
+        downloadButton_13->setFont(font);
+        downloadButton_13->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_13->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-radius: 1px;"));
+        pushButton_12 = new QPushButton(centralwidget);
+        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        pushButton_12->setGeometry(QRect(120, 320, 111, 31));
+        pushButton_12->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_12->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-left-radius: 15px;\n"
+"border-top-right-radius: 15px;"));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(0, 320, 111, 31));
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;"));
+        downloadButton_14 = new QPushButton(centralwidget);
+        downloadButton_14->setObjectName(QString::fromUtf8("downloadButton_14"));
+        downloadButton_14->setGeometry(QRect(0, 70, 111, 31));
+        downloadButton_14->setFont(font);
+        downloadButton_14->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_14->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-bottom-right-radius: 15px;"));
+        downloadButton_10 = new QPushButton(centralwidget);
+        downloadButton_10->setObjectName(QString::fromUtf8("downloadButton_10"));
+        downloadButton_10->setGeometry(QRect(130, 110, 101, 41));
+        downloadButton_10->setFont(font);
+        downloadButton_10->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_10->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-radius: 1px;\n"
+"border-bottom-right-radius: 15px;"));
+        pushButton_4 = new QPushButton(centralwidget);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(0, 110, 111, 31));
+        pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;"));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(0, 180, 111, 31));
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;"));
+        pushButton_9 = new QPushButton(centralwidget);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setGeometry(QRect(120, 80, 111, 31));
+        pushButton_9->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_9->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;\n"
+"border-bottom-left-radius: 12px;"));
+        downloadButton_2 = new QPushButton(centralwidget);
+        downloadButton_2->setObjectName(QString::fromUtf8("downloadButton_2"));
+        downloadButton_2->setGeometry(QRect(0, 210, 111, 31));
+        downloadButton_2->setFont(font);
+        downloadButton_2->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_2->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-bottom-right-radius: 15px;"));
+        pushButton_13 = new QPushButton(centralwidget);
+        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+        pushButton_13->setGeometry(QRect(0, 40, 111, 31));
+        pushButton_13->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_13->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;"));
+        downloadButton_3 = new QPushButton(centralwidget);
+        downloadButton_3->setObjectName(QString::fromUtf8("downloadButton_3"));
+        downloadButton_3->setGeometry(QRect(0, 350, 111, 41));
+        downloadButton_3->setFont(font);
+        downloadButton_3->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_3->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-radius: 1px;"));
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(0, 250, 111, 31));
+        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+" border-top-right-radius: 15px;"));
+        downloadButton_12 = new QPushButton(centralwidget);
+        downloadButton_12->setObjectName(QString::fromUtf8("downloadButton_12"));
+        downloadButton_12->setGeometry(QRect(130, 270, 101, 41));
+        downloadButton_12->setFont(font);
+        downloadButton_12->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_12->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-radius: 1px;\n"
+"border-bottom-right-radius: 15px;"));
+        downloadButton_4 = new QPushButton(centralwidget);
+        downloadButton_4->setObjectName(QString::fromUtf8("downloadButton_4"));
+        downloadButton_4->setGeometry(QRect(0, 280, 111, 31));
+        downloadButton_4->setFont(font);
+        downloadButton_4->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_4->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+" border-bottom-right-radius: 15px;\n"
+"opacity: 0.1;"));
+        pushButton_10 = new QPushButton(centralwidget);
+        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
+        pushButton_10->setGeometry(QRect(120, 160, 111, 31));
+        pushButton_10->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_10->setStyleSheet(QString::fromUtf8("color: rgb(206, 255, 165);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;\n"
+"border-bottom-left-radius: 12px;"));
+        downloadButton_5 = new QPushButton(centralwidget);
+        downloadButton_5->setObjectName(QString::fromUtf8("downloadButton_5"));
+        downloadButton_5->setGeometry(QRect(0, 140, 111, 31));
+        downloadButton_5->setFont(font);
+        downloadButton_5->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_5->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-bottom-right-radius: 15px;"));
+        downloadButton_11 = new QPushButton(centralwidget);
+        downloadButton_11->setObjectName(QString::fromUtf8("downloadButton_11"));
+        downloadButton_11->setGeometry(QRect(130, 190, 101, 41));
+        downloadButton_11->setFont(font);
+        downloadButton_11->setCursor(QCursor(Qt::PointingHandCursor));
+        downloadButton_11->setStyleSheet(QString::fromUtf8("color: rgb(16, 255, 24);\n"
+"background-color: #444;\n"
+"border-color: #444;\n"
+"border-radius: 1px;\n"
+"border-bottom-right-radius: 15px;"));
+        pushButton_11 = new QPushButton(centralwidget);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setGeometry(QRect(120, 240, 111, 31));
+        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_11->setStyleSheet(QString::fromUtf8("color: rgb(0, 150, 0);\n"
+"background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(192, 255, 108, 255), stop:0.5 rgba(66, 155, 143, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));\n"
+"border-top-right-radius: 15px;\n"
+"border-bottom-left-radius: 12px;"));
         MainWindow->setCentralWidget(centralwidget);
-        downloadButton_3->raise();
         downloadButton->raise();
-        downloadButton_2->raise();
-        pushButton->raise();
-        pushButton_2->raise();
-        downloadButton_4->raise();
-        pushButton_3->raise();
-        downloadButton_5->raise();
-        pushButton_4->raise();
         pushButton_5->raise();
         downloadButton_6->raise();
         downloadButton_7->raise();
@@ -412,16 +441,6 @@ public:
         downloadButton_8->raise();
         downloadButton_9->raise();
         pushButton_8->raise();
-        downloadButton_10->raise();
-        pushButton_9->raise();
-        downloadButton_11->raise();
-        pushButton_10->raise();
-        pushButton_11->raise();
-        downloadButton_12->raise();
-        downloadButton_13->raise();
-        pushButton_12->raise();
-        pushButton_13->raise();
-        downloadButton_14->raise();
         downloadButton_15->raise();
         pushButton_14->raise();
         downloadButton_16->raise();
@@ -432,6 +451,28 @@ public:
         downloadButton_18->raise();
         pushButton_18->raise();
         downloadButton_19->raise();
+        line_3->raise();
+        line_2->raise();
+        label->raise();
+        label_2->raise();
+        downloadButton_13->raise();
+        pushButton_12->raise();
+        pushButton_2->raise();
+        downloadButton_14->raise();
+        downloadButton_10->raise();
+        pushButton_4->raise();
+        pushButton->raise();
+        pushButton_9->raise();
+        downloadButton_2->raise();
+        pushButton_13->raise();
+        downloadButton_3->raise();
+        pushButton_3->raise();
+        downloadButton_12->raise();
+        downloadButton_4->raise();
+        pushButton_10->raise();
+        downloadButton_5->raise();
+        downloadButton_11->raise();
+        pushButton_11->raise();
 
         retranslateUi(MainWindow);
 
@@ -442,14 +483,6 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "AIBS", nullptr));
         downloadButton->setText(QCoreApplication::translate("MainWindow", "Info", nullptr));
-        downloadButton_2->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Gideon", nullptr));
-        downloadButton_3->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Impulse", nullptr));
-        downloadButton_4->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Wig", nullptr));
-        downloadButton_5->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Vk_photos", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "LazySQLMap", nullptr));
         downloadButton_6->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         downloadButton_7->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
@@ -458,16 +491,6 @@ public:
         downloadButton_8->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         downloadButton_9->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         pushButton_8->setText(QCoreApplication::translate("MainWindow", "NikTok-OSINT", nullptr));
-        downloadButton_10->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("MainWindow", "WifiDos", nullptr));
-        downloadButton_11->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_10->setText(QCoreApplication::translate("MainWindow", "PDF Virus", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("MainWindow", "PhantomScanner", nullptr));
-        downloadButton_12->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        downloadButton_13->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
-        pushButton_12->setText(QCoreApplication::translate("MainWindow", "GonnaCry", nullptr));
-        pushButton_13->setText(QCoreApplication::translate("MainWindow", "Insta Hack", nullptr));
-        downloadButton_14->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         downloadButton_15->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         pushButton_14->setText(QCoreApplication::translate("MainWindow", "Shodan", nullptr));
         downloadButton_16->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
@@ -478,6 +501,26 @@ public:
         downloadButton_18->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         pushButton_18->setText(QCoreApplication::translate("MainWindow", "Userrecon", nullptr));
         downloadButton_19->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Discord - Gest#1955, Vk - vk.com/nesryf", nullptr));
+        label_2->setText(QString());
+        downloadButton_13->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_12->setText(QCoreApplication::translate("MainWindow", "GonnaCry", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Impulse", nullptr));
+        downloadButton_14->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        downloadButton_10->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Vk_photos", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Gideon", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("MainWindow", "WifiDos", nullptr));
+        downloadButton_2->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_13->setText(QCoreApplication::translate("MainWindow", "Insta Hack", nullptr));
+        downloadButton_3->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Wig", nullptr));
+        downloadButton_12->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        downloadButton_4->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_10->setText(QCoreApplication::translate("MainWindow", "PDF Virus", nullptr));
+        downloadButton_5->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        downloadButton_11->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        pushButton_11->setText(QCoreApplication::translate("MainWindow", "PhantomScanner", nullptr));
     } // retranslateUi
 
 };
